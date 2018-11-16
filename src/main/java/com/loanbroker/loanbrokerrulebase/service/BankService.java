@@ -23,12 +23,12 @@ public class BankService {
         Bank bank4 = new Bank();
         bank1.setName("cphbusiness.bankXML");
         bank2.setName("cphbusiness.bankJSON");
-        bank3.setName("group4.bankREST");
-        bank4.setName("group4.bankRABBIT");
+        bank3.setName("group4.bankRABBIT");
+        bank4.setName("group4.bankREST");
         bank1.setRoutingkey("rkey1XML");
         bank2.setRoutingkey("rkey2JSON");
-        bank3.setRoutingkey("rkey3REST");
-        bank4.setRoutingkey("rKey4RABBIT");
+        bank3.setRoutingkey("rKey3RABBIT");
+        bank4.setRoutingkey("rkey4REST");
         banks.put(bank1.getName(), bank1);
         banks.put(bank2.getName(), bank2);
         banks.put(bank3.getName(), bank3);
@@ -38,13 +38,13 @@ public class BankService {
     public BankList getBanks(int creditScore, double loanAmount){
         List<Bank> lenders = new ArrayList();
         if ((loanAmount >= (double) 75000) && (creditScore >= 600)) {
-            lenders.add(banks.get("cphbusiness.bankJSON"));
-            lenders.add(banks.get("group4.bankREST"));
+            lenders.add(banks.get("group4.bankRABBIT"));
         }
         if (((loanAmount >= (double) 10000) && (loanAmount <= (double) 74999)) && (creditScore >= 400)) {
             lenders.add(banks.get("cphbusiness.bankXML"));
+            lenders.add(banks.get("cphbusiness.bankJSON"));
         }
-        lenders.add(banks.get("group4.bankRABBIT"));
+        lenders.add(banks.get("group4.bankREST"));
         BankList banksToReturn = new BankList();
         banksToReturn.setBanks(lenders);
         return banksToReturn;
