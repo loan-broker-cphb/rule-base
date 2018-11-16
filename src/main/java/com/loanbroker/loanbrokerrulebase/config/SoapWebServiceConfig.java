@@ -21,7 +21,7 @@ public class SoapWebServiceConfig {
         MessageDispatcherServlet servlet = new MessageDispatcherServlet();
         servlet.setApplicationContext(context);
         servlet.setTransformWsdlLocations(true);
-        return new ServletRegistrationBean(servlet, "/soapWS/*");
+        return new ServletRegistrationBean(servlet, "/rulebase/*");
     }
 
     @Bean
@@ -33,7 +33,7 @@ public class SoapWebServiceConfig {
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema rulebaseSchema){
         DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
         definition.setSchema(rulebaseSchema);
-        definition.setLocationUri("/soapWS");
+        definition.setLocationUri("/rulebase");
         definition.setPortTypeName("BankService");
         definition.setTargetNamespace("http://techprimers.com/spring-boot-soap-example");
         return definition;
