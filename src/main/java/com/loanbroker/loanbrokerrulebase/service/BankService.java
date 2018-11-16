@@ -25,10 +25,10 @@ public class BankService {
         bank2.setName("cphbusiness.bankJSON");
         bank3.setName("group4.bankREST");
         bank4.setName("group4.bankRABBIT");
-        bank1.setRoutingkey("rkey1");
-        bank2.setRoutingkey("rkey2");
-        bank3.setRoutingkey("rkey3");
-        bank4.setRoutingkey("rKey4");
+        bank1.setRoutingkey("rkey1XML");
+        bank2.setRoutingkey("rkey2JSON");
+        bank3.setRoutingkey("rkey3REST");
+        bank4.setRoutingkey("rKey4RABBIT");
         banks.put(bank1.getName(), bank1);
         banks.put(bank2.getName(), bank2);
         banks.put(bank3.getName(), bank3);
