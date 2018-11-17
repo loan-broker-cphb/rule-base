@@ -1,8 +1,8 @@
-package com.loanbroker.loanbrokerrulebase.endpoint;
+package com.loanbroker.rulebase.endpoint;
 
-import com.loanbroker.loanbrokerrulebase.service.BankService;
-import com.techprimers.spring_boot_soap_example.BankList;
-import com.techprimers.spring_boot_soap_example.LoanRequest;
+import com.loanbroker.rulebase.service.BankService;
+import com.loanbroker.rulebase_soap.BankList;
+import com.loanbroker.rulebase_soap.LoanRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;

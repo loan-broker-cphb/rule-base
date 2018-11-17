@@ -6,7 +6,7 @@
 //
 
 
-package com.techprimers.spring_boot_soap_example;
+package com.loanbroker.rulebase_soap;
 
 import java.util.ArrayList;
 import java.util.List;

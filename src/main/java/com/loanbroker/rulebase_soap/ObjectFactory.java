@@ -6,7 +6,7 @@
 //
 
 
-package com.techprimers.spring_boot_soap_example;
+package com.loanbroker.rulebase_soap;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

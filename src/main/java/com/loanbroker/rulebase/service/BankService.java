@@ -1,7 +1,7 @@
-package com.loanbroker.loanbrokerrulebase.service;
+package com.loanbroker.rulebase.service;
 
-import com.techprimers.spring_boot_soap_example.Bank;
-import com.techprimers.spring_boot_soap_example.BankList;
+import com.loanbroker.rulebase_soap.Bank;
+import com.loanbroker.rulebase_soap.BankList;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;

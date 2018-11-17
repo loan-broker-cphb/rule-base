@@ -1,4 +1,4 @@
-package com.loanbroker.loanbrokerrulebase;
+package com.loanbroker.rulebase;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

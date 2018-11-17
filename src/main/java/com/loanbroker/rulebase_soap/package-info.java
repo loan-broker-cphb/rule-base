@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://techprimers.com/spring-boot-soap-example", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package com.techprimers.spring_boot_soap_example;
+package com.loanbroker.rulebase_soap;

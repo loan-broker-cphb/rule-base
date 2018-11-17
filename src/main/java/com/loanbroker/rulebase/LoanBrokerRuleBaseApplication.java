@@ -1,4 +1,4 @@
-package com.loanbroker.loanbrokerrulebase;
+package com.loanbroker.rulebase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
