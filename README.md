@@ -31,15 +31,15 @@ group4.bankJSON | `default`| `0-800` |  `G4_JSON` |
         <ns2:BankList xmlns:ns2="http://techprimers.com/spring-boot-soap-example">
             <ns2:banks>
                 <ns2:name>cphbusiness.bankXML</ns2:name>
-                <ns2:routingkey>rkey1XML</ns2:routingkey>
+                <ns2:routingkey>CPHB_XML</ns2:routingkey>
             </ns2:banks>
             <ns2:banks>
                 <ns2:name>cphbusiness.bankJSON</ns2:name>
-                <ns2:routingkey>rkey2JSON</ns2:routingkey>
+                <ns2:routingkey>CPHB_JSON</ns2:routingkey>
             </ns2:banks>
             <ns2:banks>
-                <ns2:name>group4.bankREST</ns2:name>
-                <ns2:routingkey>rkey4REST</ns2:routingkey>
+                <ns2:name>group4.bankJSON</ns2:name>
+                <ns2:routingkey>G4_JSON</ns2:routingkey>
             </ns2:banks>
         </ns2:BankList>
     </SOAP-ENV:Body>
