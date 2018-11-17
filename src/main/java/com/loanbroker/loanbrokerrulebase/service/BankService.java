@@ -24,11 +24,11 @@ public class BankService {
         bank1.setName("cphbusiness.bankXML");
         bank2.setName("cphbusiness.bankJSON");
         bank3.setName("group4.bankRABBIT");
-        bank4.setName("group4.bankREST");
-        bank1.setRoutingkey("rkey1XML");
-        bank2.setRoutingkey("rkey2JSON");
-        bank3.setRoutingkey("rKey3RABBIT");
-        bank4.setRoutingkey("rkey4REST");
+        bank4.setName("group4.bankJSON");
+        bank1.setRoutingkey("CPHB_XML");
+        bank2.setRoutingkey("CPHB_JSON");
+        bank3.setRoutingkey("G4_RABBIT");
+        bank4.setRoutingkey("G4_JSON");
         banks.put(bank1.getName(), bank1);
         banks.put(bank2.getName(), bank2);
         banks.put(bank3.getName(), bank3);
@@ -44,7 +44,7 @@ public class BankService {
             lenders.add(banks.get("cphbusiness.bankXML"));
             lenders.add(banks.get("cphbusiness.bankJSON"));
         }
-        lenders.add(banks.get("group4.bankREST"));
+        lenders.add(banks.get("group4.bankJSON"));
         BankList banksToReturn = new BankList();
         banksToReturn.setBanks(lenders);
         return banksToReturn;
