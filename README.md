@@ -5,7 +5,7 @@ BANKS | LOAN AMOUNT | CREDIT SCORE  | ROUTING KEY |
 cphbusiness.bankXML | `10000 - 74999` | `> 399`  | `CPHB_XML` |
 cphbusiness.bankJSON | `10000-74999` | `> 399` | `CPHB_JSON` |
 group4.bankRABBIT | `> 75000` | `> 599` | `G4_RABBIT` |
-group4.bankJSON | `default`| `default` |  `G4_JSON` | 
+group4.bankJSON | `default`| `0-800` |  `G4_JSON` | 
 
 **POST Request: localhost:8091/rulebase**
 

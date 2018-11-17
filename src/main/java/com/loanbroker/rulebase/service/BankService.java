@@ -16,7 +16,7 @@ public class BankService {
     private static final Map<String, Bank> banks = new HashMap<>();
 
     @PostConstruct
-    public void initialize(){
+    public void initialize() {
         Bank bank1 = new Bank();
         Bank bank2 = new Bank();
         Bank bank3 = new Bank();
@@ -35,16 +35,18 @@ public class BankService {
         banks.put(bank4.getName(), bank4);
     }
 
-    public BankList getBanks(int creditScore, double loanAmount){
+    public BankList getBanks(int creditScore, double loanAmount) {
         List<Bank> lenders = new ArrayList();
-        if ((loanAmount >= (double) 75000) && (creditScore >= 600)) {
-            lenders.add(banks.get("group4.bankRABBIT"));
+        if(creditScore > -1 && creditScore < 800) {
+            if ((loanAmount >= (double) 75000) && (creditScore >= 600)) {
+                lenders.add(banks.get("group4.bankRABBIT"));
+            }
+            if (((loanAmount >= (double) 10000) && (loanAmount <= (double) 74999)) && (creditScore >= 400)) {
+                lenders.add(banks.get("cphbusiness.bankXML"));
+                lenders.add(banks.get("cphbusiness.bankJSON"));
+            }
+            lenders.add(banks.get("group4.bankJSON"));
         }
-        if (((loanAmount >= (double) 10000) && (loanAmount <= (double) 74999)) && (creditScore >= 400)) {
-            lenders.add(banks.get("cphbusiness.bankXML"));
-            lenders.add(banks.get("cphbusiness.bankJSON"));
-        }
-        lenders.add(banks.get("group4.bankJSON"));
         BankList banksToReturn = new BankList();
         banksToReturn.setBanks(lenders);
         return banksToReturn;
