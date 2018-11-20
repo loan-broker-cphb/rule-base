@@ -1,5 +1,6 @@
 package rulebase;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +16,10 @@ import org.springframework.xml.xsd.XsdSchema;
 @EnableWs
 @Configuration
 public class WebServiceConfig extends WsConfigurerAdapter {
+
+    @Value("${xsd.filepath}")
+    private String xsdFilePath;
+
     @Bean
     public ServletRegistrationBean messageDispatcherServlet(ApplicationContext applicationContext) {
         MessageDispatcherServlet servlet = new MessageDispatcherServlet();
@@ -35,6 +40,6 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 
     @Bean
     public XsdSchema banksSchema() {
-        return new SimpleXsdSchema(new ClassPathResource("src/main/xsd/banks.xsd"));
+        return new SimpleXsdSchema(new ClassPathResource(xsdFilePath));
     }
 }
