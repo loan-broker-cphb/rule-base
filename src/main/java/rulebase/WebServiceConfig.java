@@ -23,7 +23,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         return new ServletRegistrationBean(servlet, "/ws/*");
     }
 
-    @Bean(name = "countries")
+    @Bean(name = "banks")
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema banksSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("BanksPort");
@@ -34,7 +34,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     }
 
     @Bean
-    public XsdSchema countriesSchema() {
+    public XsdSchema banksSchema() {
         return new SimpleXsdSchema(new ClassPathResource("banks.xsd"));
     }
 }

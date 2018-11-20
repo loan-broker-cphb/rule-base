@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RuleBaseApplication {
+public class LoanBrokerRuleBaseApplication {
     public static void main(String[] args) {
-        SpringApplication.run(RuleBaseApplication.class, args);
+        SpringApplication.run(LoanBrokerRuleBaseApplication.class, args);
     }
 }
