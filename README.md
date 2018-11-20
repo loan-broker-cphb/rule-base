@@ -9,7 +9,7 @@ group4.bankJSON | `default`| `0-800` |  `G4_JSON` |
 
 **WSDL URL: http://localhost:8080/ws/banks.wsdl**
 
-**POST Request: localhost:8080/ws/banks**
+**Loan Request:**
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -24,7 +24,7 @@ group4.bankJSON | `default`| `0-800` |  `G4_JSON` |
 </soapenv:Envelope>
 ```
 
-**Response:**
+**Loan Response:**
 
 ```xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
